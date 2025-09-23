@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>
+        Welcome!
+    </h1>
+    <div id="messages" class="message">Welcome!</div>
+    <table id="usersTable">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th colspan="2">Controls</th>
+        </tr>
+    </table>
+
+    <br>
+    <form id="userForm">
+        <h2 id="userFormTitle">Create User</h2>
+        <!--Input fields for values-->
+        <input type="text" name="nameInput" id="nameInput" placeholder="Name" required="true"> 
+        <input type="text" name="emailInput" id="emailInput" placeholder="E-mail" required="true">
+        <input type="text" name="cityInput" id="cityInput" placeholder="City" required="true">
+        <button type="submit" id="userSubmitButton">submit</button>
+
+        <!--Hidden input field to hold User ID-->
+        <input type="hidden" name="idField" id="idField">
+    </form>
+</body>
+</html>
